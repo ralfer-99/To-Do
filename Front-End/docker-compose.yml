@@ -1,0 +1,11 @@
+version: '0.1.0'
+services:
+  todo-img-react-container:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./src:/app/src
+      - /app/node_modules
+    environment:
+      - WATCHPACK_POLLING=true

@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+.app {
+  display: flex;
+  width: 90%; 
+  max-width: 1200px; 
+  height: 80vh; 
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: auto; 
+}
+
+.left-panel, .right-panel {
+  padding: 60px;
+  height: 100%; 
+  box-sizing: border-box; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  width: 500px;
+}
+
+.left-panel {
+  background: #fff;
+  border-right: 2px solid #ddd;
+  flex: 4; 
+}
+
+.right-panel {
+  background: #f8f9fa;
+  overflow-y: auto; 
+  flex: 4; 
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: left; 
+  width: 100%; 
+}
+.task-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
+.task-form input,
+.task-form textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.1);
+}
+
+.task-form button {
+  width: 25%;
+  padding: 3px; 
+  background-color: #0e18a8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px; 
+  align-self: flex-end; 
+  margin: 10px; 
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%; 
+}
+
+.task-card {
+  background: #e0e0e0;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 93%;
+}
+
+.task-card h3 {
+  margin: 0 0 5px 0;
+  color: #333;
+  font-size: 18px;
+  align-self: flex-start;
+}
+
+.task-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.task-card p {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.task-card button {
+  border: 1px solid black;
+  padding: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 25%;
+}
